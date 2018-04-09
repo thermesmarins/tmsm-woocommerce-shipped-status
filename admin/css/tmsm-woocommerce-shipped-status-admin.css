@@ -1,0 +1,21 @@
+.order-status.status-completed {
+  background: #e1c8de;
+  color: #512e53;
+}
+
+.order-status.status-processed {
+  background: #c8d7e1;
+  color: #2e4453;
+}
+
+.widefat .column-wc_actions a.complete:after{
+  content: "\f310" !important;
+  background: #e1c8de;
+  color: #512e53;
+}
+
+.widefat .column-wc_actions a.processed:after {
+  content: "\f147" !important;
+  background: #c8d7e1;
+  color: #2e4453;
+}
