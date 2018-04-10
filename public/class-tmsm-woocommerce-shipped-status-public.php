@@ -96,7 +96,7 @@ class Tmsm_Woocommerce_Shipped_Status_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tmsm-woocommerce-shipped-status-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tmsm-woocommerce-shipped-status-public.js', array( 'jquery' ), $this->version, true );
 
 	}
 
