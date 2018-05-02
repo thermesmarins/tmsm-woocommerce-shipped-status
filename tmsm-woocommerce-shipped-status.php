@@ -23,6 +23,9 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       tmsm-woocommerce-shipped-status
  * Domain Path:       /languages
+ * Github Plugin URI: https://github.com/thermesmarins/tmsm-woocommerce-shipped-status
+ * Github Branch:     master
+ * Requires PHP:      5.6
  */
 
 // If this file is called directly, abort.
