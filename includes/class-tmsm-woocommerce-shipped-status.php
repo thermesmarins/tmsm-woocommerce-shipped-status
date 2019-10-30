@@ -179,6 +179,7 @@ class Tmsm_Woocommerce_Shipped_Status {
 		$this->loader->add_action( 'woocommerce_order_is_paid_statuses', $plugin_admin, 'woocommerce_order_is_paid_statuses', 10, 1 );
 		$this->loader->add_action( 'woocommerce_reports_order_statuses', $plugin_admin, 'woocommerce_reports_order_statuses', 10, 1 );
 
+		$this->loader->add_filter( 'woocommerce_order_is_download_permitted', $plugin_admin, 'woocommerce_order_is_download_permitted', 10, 2 );
 	}
 
 	/**

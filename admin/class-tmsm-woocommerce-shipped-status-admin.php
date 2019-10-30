@@ -267,4 +267,17 @@ class Tmsm_Woocommerce_Shipped_Status_Admin {
 		return $statuses;
 	}
 
+	/**
+	 * @param $is_download_permitted bool
+	 * @param $order WC_Order
+	 *
+	 * @return bool
+	 */
+	function woocommerce_order_is_download_permitted( $is_download_permitted, $order ) {
+		if ( $order->has_status ( 'processed' ) ) {
+			return true;
+		}
+		return $is_download_permitted;
+	}
+
 }
