@@ -1,3 +1,4 @@
+### 1.0.2: December 5th, 2019
 * Download permitted only if status processed
 * Remove error log
 
