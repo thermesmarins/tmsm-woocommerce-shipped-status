@@ -16,7 +16,7 @@
  * Plugin Name:       TMSM WooCommerce Shipped Status
  * Plugin URI:        https://github.com/thermesmarins/tmsm-woocommerce-shipped-status
  * Description:       Adds a "Shipped" status to WooCommerce order statuses
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            Nicolas Mollet
  * Author URI:        https://github.com/nicomollet
  * License:           GPL-2.0+
@@ -25,8 +25,8 @@
  * Domain Path:       /languages
  * Github Plugin URI: https://github.com/thermesmarins/tmsm-woocommerce-shipped-status
  * Github Branch:     master
- * Requires PHP:      5.6
- * WC requires at least: 4.8.0
+ * Requires PHP:      7.1
+ * WC requires at least: 4.5.0
  * WC tested up to: 5.0.0
  */
 
@@ -40,7 +40,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'TMSM_WOOCOMMERCE_SHIPPED_STATUS_VERSION', '1.0.2' );
+define( 'TMSM_WOOCOMMERCE_SHIPPED_STATUS_VERSION', '1.0.3' );
 
 /**
  * The code that runs during plugin activation.

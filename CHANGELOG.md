@@ -1,3 +1,4 @@
+### 1.0.3: April 27th, 2021
 * Action buttons styling
 
 ### 1.0.2: December 5th, 2019
