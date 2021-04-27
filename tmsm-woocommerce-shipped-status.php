@@ -26,6 +26,8 @@
  * Github Plugin URI: https://github.com/thermesmarins/tmsm-woocommerce-shipped-status
  * Github Branch:     master
  * Requires PHP:      5.6
+ * WC requires at least: 4.8.0
+ * WC tested up to: 5.0.0
  */
 
 // If this file is called directly, abort.

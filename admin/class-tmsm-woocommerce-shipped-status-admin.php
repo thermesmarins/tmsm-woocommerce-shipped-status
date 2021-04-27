@@ -172,8 +172,7 @@ class Tmsm_Woocommerce_Shipped_Status_Admin {
 
 		if ( $order->has_status( array( 'processing', 'completed' ) ) ) {
 
-			// Get Order ID (compatibility all WC versions)
-			$order_id = method_exists( $order, 'get_id' ) ? $order->get_id() : $order->id;
+			$order_id = $order->get_id();
 			// Set the action button
 			$actions['processed'] = array(
 				'url'    => wp_nonce_url( admin_url( 'admin-ajax.php?action=woocommerce_mark_order_status&status=processed&order_id='

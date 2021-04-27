@@ -2,20 +2,24 @@
   background: #e1c8de;
   color: #512e53;
 }
-
 .order-status.status-processed {
   background: #c8d7e1;
   color: #2e4453;
 }
-
-.widefat .column-wc_actions a.complete:after{
-  content: "\f310" !important;
+.column-wc_actions a.complete {
   background: #e1c8de;
   color: #512e53;
+  border-color: #512e53;
 }
-
-.widefat .column-wc_actions a.processed:after {
-  content: "\f147" !important;
+.column-wc_actions a.complete:after {
+  content: "\f310" !important;
+}
+.column-wc_actions a.processed {
   background: #c8d7e1;
   color: #2e4453;
+  border-color: #2e4453;
 }
+.column-wc_actions a.processed:after {
+  content: "\f147" !important;
+}
+/*# sourceMappingURL=tmsm-woocommerce-shipped-status-admin.css.map */
