@@ -16,7 +16,7 @@
  * Plugin Name:       TMSM WooCommerce Shipped Status
  * Plugin URI:        https://github.com/thermesmarins/tmsm-woocommerce-shipped-status
  * Description:       Adds a "Shipped" status to WooCommerce order statuses
- * Version:           1.0.3
+ * Version:           1.0.4
  * Author:            Nicolas Mollet
  * Author URI:        https://github.com/nicomollet
  * License:           GPL-2.0+
@@ -40,7 +40,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'TMSM_WOOCOMMERCE_SHIPPED_STATUS_VERSION', '1.0.3' );
+define( 'TMSM_WOOCOMMERCE_SHIPPED_STATUS_VERSION', '1.0.4' );
 
 /**
  * The code that runs during plugin activation.
@@ -49,8 +49,14 @@ define( 'TMSM_WOOCOMMERCE_SHIPPED_STATUS_VERSION', '1.0.3' );
 function activate_tmsm_woocommerce_shipped_status() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tmsm-woocommerce-shipped-status-activator.php';
 	Tmsm_Woocommerce_Shipped_Status_Activator::activate();
+	
 }
 
+add_action( 'before_woocommerce_init', function() {
+	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+	}
+} );
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-tmsm-woocommerce-shipped-status-deactivator.php

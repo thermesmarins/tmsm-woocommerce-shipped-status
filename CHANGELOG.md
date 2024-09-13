@@ -1,3 +1,6 @@
+### 1.0.4: September 13th, 2024
+* Add woocommerce HPOS compatibility function
+
 ### 1.0.3: April 27th, 2021
 * Action buttons styling
 
