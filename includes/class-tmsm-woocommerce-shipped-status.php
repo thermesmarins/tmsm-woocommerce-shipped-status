@@ -27,6 +27,7 @@
  * @subpackage Tmsm_Woocommerce_Shipped_Status/includes
  * @author     Nicolas Mollet <nico.mollet@gmail.com>
  */
+
 class Tmsm_Woocommerce_Shipped_Status {
 
 	/**
@@ -168,7 +169,10 @@ class Tmsm_Woocommerce_Shipped_Status {
 
 		$this->loader->add_filter( 'wc_order_statuses', $plugin_admin, 'rename_order_statuses', 999, 1 );
 
-		$this->loader->add_filter( 'bulk_actions-edit-shop_order', $plugin_admin, 'rename_bulk_actions', 50, 1 );
+			$this->loader->add_filter( 'bulk_actions-woocommerce_page_wc-orders', $plugin_admin, 'rename_bulk_actions', 50, 1 );
+
+			// $this->loader->add_filter( 'bulk_actions-edit-shop_order', $plugin_admin, 'rename_bulk_actions', 50, 1 );
+
 		$this->loader->add_filter( 'views_edit-shop_order', $plugin_admin, 'rename_views_filters', 50, 1 );
 		$this->loader->add_filter( 'woocommerce_admin_order_preview_actions', $plugin_admin, 'admin_order_preview_actions', 50, 2 );
 

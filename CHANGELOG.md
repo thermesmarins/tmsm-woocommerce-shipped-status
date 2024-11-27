@@ -1,3 +1,6 @@
+### 1.0.5: November 27th, 2024
+* Add bulk actions in admin order list for HPOS
+
 ### 1.0.4: September 13th, 2024
 * Add woocommerce HPOS compatibility function
 
